@@ -21,6 +21,8 @@ This lib provides a `get_gs` function to convert an RGB image to a
 grayscale
 
 ``` python
+from rgb2gray.converter import get_gs
+
 from PIL import Image
 import matplotlib.pyplot as plt
 from io import BytesIO
