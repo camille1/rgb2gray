@@ -5,14 +5,11 @@ __all__ = ['get_gs']
 
 # %% ../00_converter.ipynb 3
 import numpy as np
-import PIL
 from PIL import Image
 import cv2
-
 import matplotlib.pyplot as plt
 from io import BytesIO
 import requests
-
 
 # %% ../00_converter.ipynb 4
 def get_gs(img: Image) -> np.array:
