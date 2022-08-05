@@ -15,6 +15,7 @@ import requests
 
 # %% ../00_converter.ipynb 4
 def get_gs(img: Image) -> np.array:
+    "Convert RGB image to grayscale."
     img = img.convert("RGB")
     img_array = np.asarray(img)
     return cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2GRAY)
