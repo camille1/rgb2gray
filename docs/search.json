@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "converter.html",
+    "href": "converter.html",
+    "title": "RGB2Gray–A basic grayscale image converter",
+    "section": "",
+    "text": "get_gs\n\n get_gs\n         (img:<module'PIL.Image'from'/home/camille/mambaforge/lib/python3.\n         9/site-packages/PIL/Image.py'>)\n\nConvert RGB image to grayscale.\nHere is an example of conversion…\n\nred = Image.new('RGB', (10, 10), color = (255,0,0))\nget_gs(red)\n\narray([[76, 76, 76, 76, 76, 76, 76, 76, 76, 76],\n       [76, 76, 76, 76, 76, 76, 76, 76, 76, 76],\n       [76, 76, 76, 76, 76, 76, 76, 76, 76, 76],\n       [76, 76, 76, 76, 76, 76, 76, 76, 76, 76],\n       [76, 76, 76, 76, 76, 76, 76, 76, 76, 76],\n       [76, 76, 76, 76, 76, 76, 76, 76, 76, 76],\n       [76, 76, 76, 76, 76, 76, 76, 76, 76, 76],\n       [76, 76, 76, 76, 76, 76, 76, 76, 76, 76],\n       [76, 76, 76, 76, 76, 76, 76, 76, 76, 76],\n       [76, 76, 76, 76, 76, 76, 76, 76, 76, 76]], dtype=uint8)\n\n\n\nfig, axes = plt.subplots(nrows=1, ncols=2, figsize=(10,10))\naxes[0].imshow(red)\naxes[1].imshow(get_gs(red), cmap='gray')\nplt.show();"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "RGB2Gray",
+    "section": "",
+    "text": "RGB to grayscale image converter."
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "RGB2Gray",
+    "section": "Install",
+    "text": "Install\nInstall using:\npip install rgb2gray\nor:\nconda install -c rgb2gray"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "RGB2Gray",
+    "section": "How to use",
+    "text": "How to use\nThis lib provides a get_gs function to convert an RGB image to a grayscale\n\nfrom PIL import Image\nimport matplotlib.pyplot as plt\nfrom io import BytesIO\nimport requests\n\n\nred = Image.new('RGB', (10, 10), color = (255,0,0))\nfig, axes = plt.subplots(nrows=1, ncols=2, figsize=(7,7))\naxes[0].imshow(red)\naxes[1].imshow(get_gs(red), cmap='gray')\nplt.show();\n\n\n\n\n\nurl= 'https://cdn.analyticsvidhya.com/wp-content/uploads/2019/07/3.jpg'\nimg = Image.open(BytesIO(requests.get(url).content))\n\nfig, axes = plt.subplots(nrows=1, ncols=2, figsize=(15,10))\n\naxes[0].imshow(img)\naxes[1].imshow(get_gs(img), cmap='gray')\nplt.show();"
+  }
+]
