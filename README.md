@@ -17,9 +17,8 @@ or:
 
 ## How to use
 
-This lib provides a
-[get_gs](https://camille1.github.io/converter.html#get_gs) function to
-convert an RGB image to a grayscale
+This lib provides a `get_gs` function to convert an RGB image to a
+grayscale
 
 ``` python
 from PIL import Image
