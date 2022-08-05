@@ -26,4 +26,4 @@ d = { 'settings': { 'audience': 'Developers',
                 'tst_flags': 'notest',
                 'user': 'camille1',
                 'version': '0.0.1'},
-  'syms': {'rgb2gray.get_gs': {'rgb2gray.get_gs.get_gs': 'https://camille1.github.io/rgb2gray/get_gs.html#get_gs'}}}
+  'syms': {'rgb2gray.converter': {'rgb2gray.converter.get_gs': 'https://camille1.github.io/rgb2gray/converter.html#get_gs'}}}
