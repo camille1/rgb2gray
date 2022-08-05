@@ -26,6 +26,4 @@ d = { 'settings': { 'audience': 'Developers',
                 'tst_flags': 'notest',
                 'user': 'camille1',
                 'version': '0.0.1'},
-  'syms': { 'rgb2gray..ipynb_checkpoints.RGB2Grayconverter-checkpoint': { 'rgb2gray..ipynb_checkpoints.RGB2Grayconverter-checkpoint.get_gs': 'https://camille1.github.io/rgb2gray/.ipynb_checkpoints.RGB2Grayconverter-checkpoint.html#get_gs'},
-            'rgb2gray.RGB2Grayconverter': {'rgb2gray.RGB2Grayconverter.get_gs': 'https://camille1.github.io/rgb2gray/RGB2Grayconverter.html#get_gs'},
-            'rgb2gray.converter': {'rgb2gray.converter.get_gs': 'https://camille1.github.io/rgb2gray/converter.html#get_gs'}}}
+  'syms': {'rgb2gray.converter': {'rgb2gray.converter.get_gs': 'https://camille1.github.io/rgb2gray/converter.html#get_gs'}}}

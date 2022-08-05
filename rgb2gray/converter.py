@@ -3,12 +3,17 @@
 # %% auto 0
 __all__ = ['get_gs']
 
-# %% ../00_converter.ipynb 4
+# %% ../00_converter.ipynb 3
 from PIL import Image
 import numpy as np
 import cv2
 
-# %% ../00_converter.ipynb 5
+import matplotlib.pyplot as plt
+from io import BytesIO
+import requests
+
+
+# %% ../00_converter.ipynb 4
 def get_gs(img: Image) -> np.array:
     img = img.convert("RGB")
     img_array = np.asarray(img)
