@@ -1,7 +1,0 @@
-website:
-  sidebar:
-    contents:
-      - section: nbs
-        contents:
-          - nbs/index.ipynb
-          - nbs/00_converters.ipynb
