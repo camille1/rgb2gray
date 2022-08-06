@@ -7,6 +7,8 @@ RGB2Gray
 
 `pip install rgb2gray`
 
+![image.png](images/ds.jpg)
+
 ## How to use
 
 An example with
