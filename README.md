@@ -9,7 +9,8 @@ RGB2Gray
 
 ## How to use
 
-An example with `rgb2gray`
+An example with
+[rgb2gray](https://camille1.github.io/converters.html#rgb2gray)
 
 ``` python
 from PIL import Image
@@ -39,9 +40,10 @@ import requests
 ```
 
 ``` python
-url= 'https://cdn.analyticsvidhya.com/wp-content/uploads/2019/07/3.jpg'
-img = Image.open(BytesIO(requests.get(url).content))
+# url= 'https://cdn.analyticsvidhya.com/wp-content/uploads/2019/07/3.jpg'
+# img = Image.open(BytesIO(requests.get(url).content))
 
+img = Image.open('images/ds.jpg')
 fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(15,10))
 
 axes[0].imshow(img)
@@ -49,4 +51,4 @@ axes[1].imshow(rgb2gray(img), cmap='gray')
 plt.show();
 ```
 
-![](index_files/figure-gfm/cell-5-output-1.png)
+![](index_files/figure-gfm/cell-6-output-1.png)
