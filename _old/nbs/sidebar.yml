@@ -2,4 +2,4 @@ website:
   sidebar:
     contents:
       - index.ipynb
-      - 00_converters.ipynb
+      - 00_converter.ipynb
