@@ -7,12 +7,12 @@ RGB2Gray
 
 `pip install rgb2gray`
 
-![image.png](rgb2gray/images/ds.jpg)
+![image.png](images/ds.jpg)
 
 ## How to use
 
 An example with
-[rgb2gray](https://camille1.github.io/converters.html#rgb2gray)
+[rgb2gray](https://camille1.github.io/rgb2gray/nbs/converters.html#rgb2gray)
 
 ``` python
 from PIL import Image
@@ -53,4 +53,4 @@ axes[1].imshow(rgb2gray(img), cmap='gray')
 plt.show();
 ```
 
-![](rgb2gray/index_files/figure-gfm/cell-6-output-1.png)
+![](index_files/figure-gfm/cell-6-output-1.png)
