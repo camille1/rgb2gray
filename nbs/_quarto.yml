@@ -23,7 +23,7 @@ website:
   open-graph: true
   reader-mode: true
   repo-branch: main
-  repo-url: https://github.com/camille1/rgb2gray/nbs/
+  repo-url: https://github.com/camille1/rgb2gray/
   repo-actions: [issue]
   navbar:
     background: primary

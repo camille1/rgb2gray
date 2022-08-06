@@ -7,7 +7,7 @@ RGB2Gray
 
 `pip install rgb2gray`
 
-![image.png](images/ds.jpg)
+![image.png](rgb2gray/images/ds.jpg)
 
 ## How to use
 
@@ -53,4 +53,4 @@ axes[1].imshow(rgb2gray(img), cmap='gray')
 plt.show();
 ```
 
-![](index_files/figure-gfm/cell-6-output-1.png)
+![](rgb2gray/index_files/figure-gfm/cell-6-output-1.png)
