@@ -17,12 +17,11 @@ An example with
 ``` python
 from PIL import Image
 import matplotlib.pyplot as plt
-from io import BytesIO
-import requests
 ```
 
 ``` python
-rgb2gray(Image.new('RGB', (10, 10), color = (255,255,0)))
+result = rgb2gray(Image.new('RGB', (10, 10), color = (255,255,0)))
+result
 ```
 
     array([[226, 226, 226, 226, 226, 226, 226, 226, 226, 226],
@@ -37,14 +36,13 @@ rgb2gray(Image.new('RGB', (10, 10), color = (255,255,0)))
            [226, 226, 226, 226, 226, 226, 226, 226, 226, 226]], dtype=uint8)
 
 ``` python
-from io import BytesIO
-import requests
+plt.imshow(result, cmap='gray')
+plt.show();
 ```
 
-``` python
-# url= 'https://cdn.analyticsvidhya.com/wp-content/uploads/2019/07/3.jpg'
-# img = Image.open(BytesIO(requests.get(url).content))
+![](index_files/figure-gfm/cell-4-output-1.png)
 
+``` python
 img = Image.open('images/ds.jpg')
 fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(15,10))
 
@@ -53,4 +51,4 @@ axes[1].imshow(rgb2gray(img), cmap='gray')
 plt.show();
 ```
 
-![](index_files/figure-gfm/cell-6-output-1.png)
+![](index_files/figure-gfm/cell-5-output-1.png)
