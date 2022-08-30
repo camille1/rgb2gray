@@ -12,7 +12,8 @@ rgb2gray
 ## How to use
 
 An example with
-[rgb2gray](https://camille1.github.io/rgb2gray/converters.html#rgb2gray)
+[`rgb2gray`](https://camille1.github.io/rgb2gray/converters.html#rgb2gray)
+package.
 
 ``` python
 from PIL import Image

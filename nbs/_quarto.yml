@@ -18,8 +18,6 @@ website:
   title: "rgb2gray"
   site-url: "https://camille1.github.io/rgb2gray/"
   description: "rgb2gray"
-  execute: 
-    enabled: false
   twitter-card: true
   open-graph: true
   reader-mode: true
