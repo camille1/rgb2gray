@@ -1,0 +1,1 @@
+Sitemap: https://camille1.github.io/rgb2gray/sitemap.xml

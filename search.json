@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "rgb2gray",
+    "section": "",
+    "text": "pip install rgb2gray"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "rgb2gray",
+    "section": "How to use",
+    "text": "How to use\nAn example with rgb2gray package.\n\nfrom PIL import Image\nimport matplotlib.pyplot as plt\n\n\nresult = rgb2gray(Image.new('RGB', (10, 10), color = (255,255,0)))\nresult\n\narray([[226, 226, 226, 226, 226, 226, 226, 226, 226, 226],\n       [226, 226, 226, 226, 226, 226, 226, 226, 226, 226],\n       [226, 226, 226, 226, 226, 226, 226, 226, 226, 226],\n       [226, 226, 226, 226, 226, 226, 226, 226, 226, 226],\n       [226, 226, 226, 226, 226, 226, 226, 226, 226, 226],\n       [226, 226, 226, 226, 226, 226, 226, 226, 226, 226],\n       [226, 226, 226, 226, 226, 226, 226, 226, 226, 226],\n       [226, 226, 226, 226, 226, 226, 226, 226, 226, 226],\n       [226, 226, 226, 226, 226, 226, 226, 226, 226, 226],\n       [226, 226, 226, 226, 226, 226, 226, 226, 226, 226]], dtype=uint8)\n\n\n\nplt.imshow(result, cmap='gray')\nplt.show();\n\n\n\n\n\nimg = Image.open('images/ds.jpg')\nfig, axes = plt.subplots(nrows=1, ncols=2, figsize=(15,10))\n\naxes[0].imshow(img)\naxes[1].imshow(rgb2gray(img), cmap='gray')\nplt.show();"
+  },
+  {
+    "objectID": "converters.html",
+    "href": "converters.html",
+    "title": "API details",
+    "section": "",
+    "text": "source\n\nrgb2gray\n\n rgb2gray (img)\n\nConvert RGB image to grayscale.\nHere is an example of conversion…\n\nimport matplotlib.pyplot as plt\nfrom io import BytesIO\nimport requests\n\n\nred = Image.new('RGB', (10, 10), color = (255,0,0))\nrgb2gray(red)\n\narray([[76, 76, 76, 76, 76, 76, 76, 76, 76, 76],\n       [76, 76, 76, 76, 76, 76, 76, 76, 76, 76],\n       [76, 76, 76, 76, 76, 76, 76, 76, 76, 76],\n       [76, 76, 76, 76, 76, 76, 76, 76, 76, 76],\n       [76, 76, 76, 76, 76, 76, 76, 76, 76, 76],\n       [76, 76, 76, 76, 76, 76, 76, 76, 76, 76],\n       [76, 76, 76, 76, 76, 76, 76, 76, 76, 76],\n       [76, 76, 76, 76, 76, 76, 76, 76, 76, 76],\n       [76, 76, 76, 76, 76, 76, 76, 76, 76, 76],\n       [76, 76, 76, 76, 76, 76, 76, 76, 76, 76]], dtype=uint8)\n\n\n\nfig, axes = plt.subplots(nrows=1, ncols=2, figsize=(10,10))\naxes[0].imshow(red)\naxes[1].imshow(rgb2gray(red), cmap='gray')\nplt.show();\n\n\n\n\n\nimg = Image.open('images/ds.jpg')\nfig, axes = plt.subplots(nrows=1, ncols=2, figsize=(15,10))\n\naxes[0].imshow(img)\naxes[1].imshow(rgb2gray(img), cmap='gray')\nplt.show();"
+  }
+]
